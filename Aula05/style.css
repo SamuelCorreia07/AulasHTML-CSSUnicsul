@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+fieldset, legend{
+    background-color: white;
+}
+
+.tipo1{
+    background-color: aqua;
+    width: 400px;
+    border: 5px solid blue;
+    padding: 10px, 20px, 50px, 0px;
+}
+.tipo2{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 50px;
+    text-align: left;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    background-color: greenyellow;
+
+    /* Para inserir a borda: sempre ter essas duas informações */
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+
+
+    border-radius: 20px;
+}
