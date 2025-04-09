@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        fieldset{
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo.</p>
+        <!--Formulário vai direcionar o usuário e os dados inseridos por ele para xablau.php-->
+        <form action="xablau.php">
+            <!--Field = quadrado que fica em volta do formulário-->
+            <fieldset>
+                <!--legenda do field-->
+                <legend>Dados pessoais</legend>
+                <!--Label - quando clico em "Nome:" direciona para o input que o "id" é igual ao "for" do label-->
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone">
+                <br>
+                <fieldset>
+                    <legend>Preferência de Contato</legend>
+                    <input type="radio" name="prefcontato" id="contato_email" value="email">
+                    <label for="contato_email">Email</label>
+                    <br>
+                    <input type="radio" name="prefcontato" id="contato_telefone" value="telefone">
+                    <label for="contato_telefone">Telefone</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Gênero</legend>
+                    <input type="radio" name="genero" id="radio_fem" value="feminino">
+                    <label for="radio_fem">Feminino</label>
+                    <input type="radio" name="genero" id="radio_masc" value="masculino">
+                    <label for="radio_masc">Masculino</label>
+                    <input type="radio" name="genero" id="radio_outro" value="outro">
+                    <label for="radio_outro">Outro</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipo de Transporte</legend>
+                    <input type="radio" name="transporte" id="trem" value="trem">
+                    <label for="trem">Trem</label>
+                    <input type="radio" name="transporte" id="busao" value="trem">
+                    <label for="busao">Busão</label>
+                    <input type="radio" name="transporte" id="carona" value="trem">
+                    <label for="carona">Carona</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Selecione o Tópico</legend>
+                    <label for="assunto">Assunto:</label>
+                    <select name="campo_assunto" id="assunto">
+                        <option value="matricula">Matrícula</option>
+                        <option value="blackboard">Blackboard</option>
+                        <option value="portal">Portal do Aluno</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Deixe Sua Mensagem</legend>
+                    <label for="mensagem">Mensagem:</label>
+                    <br>
+                    <textarea name="campo_mensagem" id="mensagem" placeholder="Digite sua mensagem aqui" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Campus de preferência</legend>
+                    <label for="campus">Escolha o campus:</label>
+                    <datalist id="lista_campus">
+                        <option value="Anália Franco"></option>
+                        <option value="Guarulhos"></option>
+                        <option value="Liberdade"></option>
+                        <option value="Paulista"></option>
+                        <option value="Santo Amaro"></option>
+                        <option value="São Miguel"></option>
+                        <option value="Villa-Lobos"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Opções adicionais</legend>
+                    <input type="checkbox" name="opcoes[]" id="newsteller" value="newsteller">
+                    <label for="newsteller">Eu aceito receber newstellers</label>
+                    <br>
+                    <input type="checkbox" name="opcoes[]" id="promocoes" value="promocoes">
+                    <label for="promocoes">Eu aceito receber promoções por e-mail</label>
+                    <br>
+                    <input type="checkbox" name="opcoes[]" id="novidades" value="novidades">
+                    <label for="novidades">Eu aceito receber novidades sobre eventos e cursos</label>
+                    <br>
+                    <input type="checkbox" name="opcoes[]" id="termos" required>
+                    <label for="termos">Eu aceito os termos e condições</label>
+                </fieldset>
+                <br>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
