@@ -1,0 +1,23 @@
+nav ul li {
+    width: 100px;
+    margin: 5px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+article {
+    width: 300px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* ajusta a qtd de colunas pelo tamanho da tela */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
