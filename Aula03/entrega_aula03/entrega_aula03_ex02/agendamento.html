@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+</head>
+<body>
+    <h2>Agendamento de Consulta</h2>
+    <form action="">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome Completo: </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo aqui" style="width: 200px;" required>
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email aqui" required>
+            <br>
+            <label for="telefone">Telefone: </label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone aqui" required>
+            <br>
+            <label for="idade">Idade: </label>
+            <input type="text" name="idade" id="idade" style="width: 30px;" required>
+            <br>
+            <label for="especialidade">Especialidade Médica</label>
+            <select name="especialidade" id="especialidade" required>
+                <option value="">Selecione uma especialidade</option>
+                <option value="cardiologista">Cardiologista</option>
+                <option value="demartologista">Demartologista</option>
+                <option value="ginecologista">Ginecologista</option>
+                <option value="pediatra">Pediatra</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Preferência de Horário</legend>
+            <label for="data_consulta">Data Prerencial: </label>
+            <input type="date" name="data_consulta" id="data_consulta" required>
+            <br>
+            <label for="horario_consulta">Horário Prefencial: </label>
+            <input type="time" name="horario_consulta" id="horário_consulta" required>
+        </fieldset>
+        <fieldset>
+            <legend>Observações Adicionais</legend>
+            <textarea name="observacoes" id="observacoes" placeholder="Digite aqui suas observações" rows="4" style="resize: none;"></textarea>
+        </fieldset>
+        <input type="submit" value="Agendar Consulta">
+    </form>
+</body>
+</html>
