@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: block;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.card1 {
+    padding: 20px;
+    background: linear-gradient(45deg, #8e44ad, #3498db);
+}
