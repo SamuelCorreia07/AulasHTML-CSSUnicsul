@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <section class="formulario-container">
+            <h2 class="form-titulo">Formulário</h2>
+            <form action="post" class="formulario">
+                <div class="form-grupo">
+                    <label for="nome" class="form-label">Nome: </label>
+                    <input type="text" name="nome" id="nome" class="form-input" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="rgm" class="form-label">RGM: </label>
+                    <input type="text" name="rgm" id="rgm" class="form-input" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="email" class="form-label">Email: </label>
+                    <input type="email" name="email" id="email" class="form-input" required>
+                </div>
+                <fieldset>
+                    <legend class="form-legend">Curso: </legend>
+                    <input type="radio" name="curso" id="ads" value="ads" class="form-radio">
+                    <label for="ads" class="form-radio-label">ADS</label>
+                    <input type="radio" name="curso" id="ccp" value="ccp" class="form-radio">
+                    <label for="ccp" class="form-radio-label">CCP</label>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
